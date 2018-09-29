@@ -105,7 +105,6 @@ namespace pfSenseBackup.Classes
             request.Method = "POST";
 
             var postData = "download=download";
-            postData += "&donotbackuprrd=yes";
             postData += $"&__csrf_magic={csrfToken}";
             var data = Encoding.ASCII.GetBytes(postData);
 
